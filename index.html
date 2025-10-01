@@ -1,10 +1,59 @@
-<script src="https://cdn.syntha.progress.com/nuclia-widget.umd.js"></script>
-<nuclia-search-bar
-  audit_metadata='{"config":"Default Corticon Searcher","widget":"test"}'
-  knowledgebox="6bccb9ab-1ac0-42f4-8639-1096181b2030"
-  zone="progress-proc-us-east-2-1"
-  backend="https://syntha.progress.com/api"
-  cdn="https://cdn.syntha.progress.com/"
-  account="cb320760-a508-457e-be81-dd62e076e133"
-  widget_id="test"></nuclia-search-bar>
-<nuclia-search-results ></nuclia-search-results>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corticon Chat</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chat-container {
+      width: 80%;
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      color: #1c1e21;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 16px;
+      color: #606770;
+      margin-bottom: 24px;
+    }
+    nuclia-search-bar {
+      margin-bottom: 16px;
+    }
+  </style>
+  <script src="https://cdn.syntha.progress.com/nuclia-widget.umd.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Corticon Assistant</h1>
+    <p>
+      Ask me anything about Corticon and Corticon.js, past and present versions.
+      You can also filter by deployment choice or version.
+    </p>
+    <nuclia-search-bar
+      audit_metadata='{"config":"Default Corticon Searcher","widget":"test"}'
+      knowledgebox="6bccb9ab-1ac0-42f4-8639-1096181b2030"
+      zone="progress-proc-us-east-2-1"
+      backend="https://syntha.progress.com/api"
+      cdn="https://cdn.syntha.progress.com/"
+      account="cb320760-a508-457e-be81-dd62e076e133"
+      widget_id="test"></nuclia-search-bar>
+    <nuclia-search-results ></nuclia-search-results>
+  </div>
+</body>
+</html>
